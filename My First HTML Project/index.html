@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Little Taco Shop</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!-- First Heading -->
+        <h1> Welcome to The Little Taco Shop </h1>
+        <!-- navigation tag fre the navigation bar "nav" -->
+        <nav>
+            <!-- unorder list tags "ul" -->
+            <ul>
+                <!-- lists tags "li" and "abbr" tags for the abbrevation  -->
+                <li>
+                    <a href="#about"> About <abbr title="The Little Taco Shop">LTS</abbr></a>
+                </li>
+                <li>
+                    <a href="#menu"> Our Menu </a>
+                </li>
+                <li>
+                    <a href="hours.html"> Store Hours </a>
+                </li>
+                <li>
+                    <a href="contact.html"> Contact Us </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- figure tag is used for the group of images, videos or diagrams etc -->
+        <figure>
+            <img src="img/tacos_and_drink_400x267.png" alt="Taco and a Drink" title="We love tacos!" width="400" height="267">
+        </figure>
+        <!-- captions for the above figure -->
+        <figcaption> Tacos and a Drink </figcaption>
+    </header>
+    <hr>
+    <main>
+        <!-- used for the articles in the websites and "id" is must written for those who article name this is used for backend  -->
+        <article id="about">
+            <h2>
+                <About <abbr title="The Little Taco Shop "> LTS </abbr>
+            </h2>
+            <p>
+                <abbr title="The Little Taco Shop"> LTS </abbr> was Founded in <time datetime="2022">2022</time>. Ou shop was built from a <strong> love of tacos </strong> 🌮🌮🌮. We hope our shop adds a unique and interesting place to our little town.
+            </p>
+            <!-- aside is used to define content that is related to the main content but placed separately, usually as a sidebar or additional information. -->
+            <aside>
+                <h2>
+                    Taco Trivia
+                </h2>
+                <!-- details element is a container used to hide or show extra information. -->
+                <details>
+                    <summary> When did the tacos first appear in united stated?</summary>
+                    <p>
+                        Jeffery M. Pilcher, taco historian and professor of history at the university of minnesota, says the earliest mention of tacos in united states are in the newspaper from <time datetime="1905">1905</time>. (source: <cite> <a href="https://shoptuckshop.com/"> Tuck Shop</a></cite>) 
+                    </p>
+                </details>
+            </aside>
+        </article>
+        <article id="Menu">
+            <h2> Our Menu</h2>
+            <table>
+                <!-- Caption write on the top of table -->
+                <caption> 
+                    <h3>Our Tacos</h3> 
+                </caption>
+                <!-- thead is used for the header part of the table -->
+                <thead>
+                    <!-- th is used for the headings of the row or coloumn -->
+                     <!-- tr is used for the row of table and is put in table through the row. -->
+                    <tr>
+                        <th>Tacos</th>
+                        <!-- scope attribute is used to associate header cells with the data cells or scope attribute is used with the <th> element to define which cells the header applies to. -->
+                        <th scope="col"><abbr title="Quantity">QTY</abbr></th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <!-- tbody is used for the body body content -->
+                <tbody>
+                    <!-- rowspan or colspan attribute tells the browser: How many rows/col a table cell should extend vertically/Horizontally.  -->
+                    <tr>
+                        <td scope="row" rowspan="3">Crunchy</td>
+                        <td>1</td>
+                        <td>1.50$</td>
+                    </tr>
+                    <tr>
+                        <!-- td is used for table data -->
+                        <td>2</td>
+                        <td>2.50$</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>3.25$</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" rowspan="3">Crunchy</td>
+                        <td>1</td>
+                        <td>2.00$</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>3.50$</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>4.50$</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"> chips,&amp; salsa 2$</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br>
+            <p>
+                <a href="#">Back To Top</a>
+            </p>
+        </article>
+    </main>
+    <hr>
+    <footer>
+        <p> Copyright & copy; The Little Taco Shop </p>
+    </footer>
+</body>
+</html>
